@@ -16,7 +16,6 @@ struct StudentMainView: View {
     
     @State private var data: [ExitPermission] = []
     @State private var name = "Mikhail"
-    let db = Firestore.firestore()
     
     var body: some View {
         VStack{
@@ -48,30 +47,20 @@ struct StudentMainView: View {
     }
     
     func fetchName(){
-        
-        //TODO: fetch all data from realtime database
-        
-        print(Auth.auth().currentUser!.uid)
-        
-        Database.database().reference().child("Madrichs").child(Auth.auth().currentUser!.uid)
+        Database.database().reference().child("Students").child(Auth.auth().currentUser!.uid)
             .observeSingleEvent(of: .value, with: { snapshot in
 //                self.name=(value["name"] ?? "") as String
                 if let value = snapshot.value as? [String: String]{
-                    self.name = value["name"] ?? "nameee"
+                    self.name = value["name"] ?? "Error getting the name"
                 }else{
-                    self.name = "didn't get"
+                    self.name = "Error getting the name"
                 }
-//                print("Value \(value)")
             })
-        
-//        Database.database().reference().child("jj").observeSingleEvent(of: .value, with: { snapshot in
-//            self.name = snapshot.value as! String
-//        })
-        print("Hello")
     }
     
     func fetchData(){
         data.removeAll()
+        
     }
 }
 

@@ -17,7 +17,7 @@ struct MadrichMainView: View {
     
     @State private var selected = 0
     
-    private let db = Database.database()//variable to work with firestore
+    private let db = Database.database()//variable to work with realtime database
     
     @State private var isUserSignedIn = true
     @State private var madrichName = "name"

@@ -28,6 +28,8 @@
 		763C43972A1FCE1400D228B1 /* GivenPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C43962A1FCE1400D228B1 /* GivenPermissionsView.swift */; };
 		76E57E772A1CBFB800581DB4 /* ExitPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E57E762A1CBFB800581DB4 /* ExitPermission.swift */; };
 		76E57E792A1D100E00581DB4 /* MadrichMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E57E782A1D100E00581DB4 /* MadrichMainView.swift */; };
+		76E796222A7EB8CE0084A78A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */; };
+		76E796252A7F79B80084A78A /* GuardMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E796242A7F79B80084A78A /* GuardMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		763C43962A1FCE1400D228B1 /* GivenPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenPermissionsView.swift; sourceTree = "<group>"; };
 		76E57E762A1CBFB800581DB4 /* ExitPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitPermission.swift; sourceTree = "<group>"; };
 		76E57E782A1D100E00581DB4 /* MadrichMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadrichMainView.swift; sourceTree = "<group>"; };
+		76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		76E796242A7F79B80084A78A /* GuardMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 		7607A1F42A1C8916002E3B5D /* ExitConfirmations */ = {
 			isa = PBXGroup;
 			children = (
+				76E796232A7F79A70084A78A /* guard */,
+				76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */,
 				763C439A2A1FD27C00D228B1 /* models */,
 				763C43932A1FC15400D228B1 /* student */,
 				763C43922A1FC14700D228B1 /* madrich */,
@@ -190,6 +196,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76E796232A7F79A70084A78A /* guard */ = {
+			isa = PBXGroup;
+			children = (
+				76E796242A7F79B80084A78A /* GuardMainView.swift */,
+			);
+			path = guard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +327,7 @@
 			files = (
 				7607A1FD2A1C8917002E3B5D /* Preview Assets.xcassets in Resources */,
 				7607A1FA2A1C8917002E3B5D /* Assets.xcassets in Resources */,
+				76E796222A7EB8CE0084A78A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E796252A7F79B80084A78A /* GuardMainView.swift in Sources */,
 				7607A1F82A1C8916002E3B5D /* StartView.swift in Sources */,
 				763C43952A1FC19A00D228B1 /* StudentsView.swift in Sources */,
 				7607A2372A1C9000002E3B5D /* StudentMainVIew.swift in Sources */,

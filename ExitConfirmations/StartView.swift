@@ -15,12 +15,25 @@ import FirebaseFirestoreSwift
 struct StartView: View {
     
     @State private var loggedIn = false
+    @State private var accountType = 0
     @State private var isLoginBottomSheetRequested = false
     @State private var isRegisterBottomSheetRequested = false
     
     var body: some View {
         if (loggedIn){
-            MadrichMainView()
+            switch (accountType){
+            case 1:
+                MadrichMainView()
+                
+            case 2:
+                StudentMainView()
+                
+            case 3:
+                GuardMainView()
+                
+            default:
+                MadrichMainView()
+            }
         }else{
             startViewContent
         }
@@ -48,7 +61,7 @@ struct StartView: View {
                 .cornerRadius(12)
                 .sheet(isPresented: $isLoginBottomSheetRequested){
                     LoginBottomSheetView(isPresented: $isLoginBottomSheetRequested,
-                        loggedIn: $loggedIn)
+                        loggedIn: $loggedIn, accountType: $accountType)
                 }
             
             Spacer()
@@ -57,7 +70,26 @@ struct StartView: View {
         .onAppear{
             Auth.auth().addStateDidChangeListener{ auth, user in
                 if user != nil{
-                    loggedIn.toggle()
+                    Database.database().reference().child("Madrichs").observeSingleEvent(of: DataEventType.value, with: { snapshot in
+                        if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
+                            accountType = 1
+                            loggedIn.toggle()
+                        }else{
+                            Database.database().reference().child("Students").observeSingleEvent(of: DataEventType.value, with: { snapshot in
+                                if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
+                                    accountType = 2
+                                    loggedIn.toggle()
+                                }else{
+                                    Database.database().reference().child("Guards").observeSingleEvent(of: DataEventType.value, with: { snapshot in
+                                        if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
+                                            accountType = 3
+                                            loggedIn.toggle()
+                                        }
+                                    })
+                                }
+                            })
+                        }
+                    })
                 }
             }
         }
@@ -67,6 +99,7 @@ struct StartView: View {
 struct LoginBottomSheetView: View {
     @Binding var isPresented: Bool
     @Binding var loggedIn : Bool
+    @Binding var accountType: Int
     @State private var email = ""
     @State private var password = ""
     
@@ -140,7 +173,26 @@ struct LoginBottomSheetView: View {
             if (error != nil){
                 print ("error: " + error!.localizedDescription)
             }else{
-                loggedIn = true
+                Database.database().reference().child("Madrichs").observeSingleEvent(of: DataEventType.value, with: { snapshot in
+                    if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
+                        accountType = 1
+                        loggedIn.toggle()
+                    }else{
+                        Database.database().reference().child("Students").observeSingleEvent(of: DataEventType.value, with: { snapshot in
+                            if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
+                                accountType = 2
+                                loggedIn.toggle()
+                            }else{
+                                Database.database().reference().child("Guards").observeSingleEvent(of: DataEventType.value, with: { snapshot in
+                                    if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
+                                        accountType = 3
+                                        loggedIn.toggle()
+                                    }
+                                })
+                            }
+                        })
+                    }
+                })
             }
         }
         

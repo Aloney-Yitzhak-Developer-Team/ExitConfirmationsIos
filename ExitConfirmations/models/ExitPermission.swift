@@ -9,15 +9,17 @@ import Foundation
 
 
 struct ExitPermission: Identifiable, Codable{
-    let id: Int
-    let students_names: String
-    let students_ids: String
-    let madrich_name: String
-    let goingTo: String
-    let exitTime: String
+    let id: String
+    let confirmed : Bool
     let exitDate: String
-    let returnTime: String
-    let returnDate: String
-    let group: String
-    var confirmed: Bool
+    let exitTime: String
+    let goingTo : String
+    let group : String
+    let madrich_id : String
+    let madrich_name : String
+    let returnDate : String
+    let returnTime : String
+    let students_ids : String
+    let students_names : String
+    let confirmationLink : String
 }
