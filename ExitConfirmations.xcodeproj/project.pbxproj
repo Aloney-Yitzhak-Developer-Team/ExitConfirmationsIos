@@ -30,6 +30,8 @@
 		76E57E792A1D100E00581DB4 /* MadrichMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E57E782A1D100E00581DB4 /* MadrichMainView.swift */; };
 		76E796222A7EB8CE0084A78A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */; };
 		76E796252A7F79B80084A78A /* GuardMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E796242A7F79B80084A78A /* GuardMainView.swift */; };
+		76E796272A7FB8140084A78A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76E796262A7FB8140084A78A /* Localizable.strings */; };
+		76E7962A2A8297290084A78A /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 76E796292A8297290084A78A /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,7 @@
 		76E57E782A1D100E00581DB4 /* MadrichMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadrichMainView.swift; sourceTree = "<group>"; };
 		76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		76E796242A7F79B80084A78A /* GuardMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardMainView.swift; sourceTree = "<group>"; };
+		76E796262A7FB8140084A78A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 				7607A2252A1C8A73002E3B5D /* FirebaseAnalytics in Frameworks */,
 				7607A22F2A1C8A73002E3B5D /* FirebaseDynamicLinks in Frameworks */,
 				7607A2312A1C8A73002E3B5D /* FirebaseFirestore in Frameworks */,
+				76E7962A2A8297290084A78A /* Toast in Frameworks */,
 				7607A2352A1C8A73002E3B5D /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +140,7 @@
 				7607A1F72A1C8916002E3B5D /* StartView.swift */,
 				7607A1F92A1C8917002E3B5D /* Assets.xcassets */,
 				7607A1FB2A1C8917002E3B5D /* Preview Content */,
+				76E796262A7FB8140084A78A /* Localizable.strings */,
 			);
 			path = ExitConfirmations;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				7607A2302A1C8A73002E3B5D /* FirebaseFirestore */,
 				7607A2322A1C8A73002E3B5D /* FirebaseFirestoreCombine-Community */,
 				7607A2342A1C8A73002E3B5D /* FirebaseFirestoreSwift */,
+				76E796292A8297290084A78A /* Toast */,
 			);
 			productName = ExitConfirmations;
 			productReference = 7607A1F22A1C8916002E3B5D /* ExitConfirmations.app */;
@@ -308,6 +314,7 @@
 			mainGroup = 7607A1E92A1C8916002E3B5D;
 			packageReferences = (
 				7607A2232A1C8A73002E3B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				76E796282A8297290084A78A /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 7607A1F32A1C8916002E3B5D /* Products */;
 			projectDirPath = "";
@@ -326,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7607A1FD2A1C8917002E3B5D /* Preview Assets.xcassets in Resources */,
+				76E796272A7FB8140084A78A /* Localizable.strings in Resources */,
 				7607A1FA2A1C8917002E3B5D /* Assets.xcassets in Resources */,
 				76E796222A7EB8CE0084A78A /* GoogleService-Info.plist in Resources */,
 			);
@@ -690,6 +698,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		76E796282A8297290084A78A /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -737,6 +753,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7607A2232A1C8A73002E3B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		76E796292A8297290084A78A /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76E796282A8297290084A78A /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

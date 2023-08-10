@@ -16,8 +16,17 @@ struct StudentMainView: View {
     
     @State private var data: [ExitPermission] = []
     @State private var name = "Mikhail"
+    @State private var isUserLoggedIn = true
     
     var body: some View {
+        if (!isUserLoggedIn){
+            StartView()
+        }else{
+            content
+        }
+    }
+    
+    var content: some View{
         VStack{
             
             HStack{
@@ -30,6 +39,17 @@ struct StudentMainView: View {
                     .onAppear{
                         fetchName()
                     }
+                
+                Spacer()
+                
+                Button("logout", action: {
+                    do{
+                        isUserLoggedIn = false
+                        try Auth.auth().signOut()
+                    }catch let error{
+                        print(error.localizedDescription)
+                    }
+                })
                 
                 Spacer()
                 

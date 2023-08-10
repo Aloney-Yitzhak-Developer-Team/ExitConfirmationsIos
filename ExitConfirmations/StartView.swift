@@ -51,7 +51,7 @@ struct StartView: View {
             Button(action: {
                 isLoginBottomSheetRequested.toggle()
             }){
-                Text("Login")
+                Text(NSLocalizedString("sign_in", comment: ""))
                     .padding(.bottom, 15)
                     .padding(.top, 15)
                     .padding(.leading, 50)
