@@ -1,0 +1,26 @@
+//Hebrew
+"email" = "א-מייל";
+"password" = "סיסמה";
+"username" = "שם";
+"madrich" = "מדריך/ה";
+"guard" = "שומר";
+"accept" = "לאשר";
+"going_to" = "יציאה ל";
+"exit_time" = "זמן היציאה";
+"exit_date" = "יום היציאה";
+"return_date" = "יום החזרה";
+"return_time" = "זמן החזרה";
+"group" = "קבוצה";
+"students_names" = "שמות החניכים";
+"students_choosing" = "בחירת החניכים";
+"continue_t" = "להמשיך";
+"for_whom_permission" = "למי הפתק? ";
+"for_this_group" = "לתלמיד מקבוצה הזאת";
+"for_other_group" = "לכל תלמיד";
+"there_is_no_exit_permissions" = "אין אישורים בשבוע הזה";
+"create_permission" = "ליצור פתק";
+"show_qr_code" = "לפתוח קוד qr";
+"login" = "להתחבר";
+"login_to_acc" = "להתחבר לחשבון";
+"exit_permission_details" = "פרטי הרשאת יציאה";
+"exit_permission_created" = "פתק יצר";

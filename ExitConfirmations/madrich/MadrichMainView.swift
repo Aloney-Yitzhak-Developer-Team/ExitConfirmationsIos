@@ -24,6 +24,8 @@ struct MadrichMainView: View {
     @State private var group = "group"
     @State private var permissions: [ExitPermission] = []
     
+    @State private var isCreatePermissionBottomSheetRequested = false
+    
     var body: some View {
         if (!isUserSignedIn){
             StartView()
@@ -99,7 +101,7 @@ struct MadrichMainView: View {
                     Spacer()
                     
                     Button(action:{
-                        print("add btn clicked")
+                        isCreatePermissionBottomSheetRequested.toggle()
                     }){
                         Image(systemName: "plus")
                             .foregroundColor(.white)
@@ -109,6 +111,9 @@ struct MadrichMainView: View {
                         .clipShape(Circle())
                         .padding(.trailing, 30)
                 }.padding(.bottom, 50)
+                    .sheet(isPresented: $isCreatePermissionBottomSheetRequested){
+                        CreateExitPermissionBS()
+                    }
             }
         }.refreshable {
             fetchMadrichInfo()
@@ -158,7 +163,7 @@ struct MadrichMainView: View {
                             
                             if let data = snapshot.childSnapshot(forPath:"ExitPermissions").childSnapshot(forPath: String(exitPermissionId)).value as? [String: Any]{
                                 
-                                let confirmed = Bool(data["confirmed"] as? String ?? "false")
+                                let confirmed = data["confirmed"] as? Bool ?? false
                                 let exitDate = String(data["exitDate"] as? String ?? "false")
                                 let exitTime = String(data["exitTime"] as? String ?? "false")
                                 let goingTo = String(data["goingTo"] as? String ?? "false")
@@ -188,7 +193,7 @@ struct MadrichMainView: View {
                                 let result = calendar.compare(date, to: oneWeekAgo, toGranularity: .day)
                                 if result == .orderedDescending {
                                     //if the date is earlier than one week age
-                                    exitPermissions1.append(ExitPermission(id: String(exitPermissionId), confirmed: confirmed ?? false, exitDate:exitDate, exitTime: exitTime, goingTo: goingTo, group: group, madrich_id: madrich_id, madrich_name: madrich_name, returnDate: returnDate, returnTime: returnTime, students_ids: students_ids, students_names: students_names, confirmationLink: confirmationLink))
+                                    exitPermissions1.append(ExitPermission(id: String(exitPermissionId), confirmed: confirmed, exitDate:exitDate, exitTime: exitTime, goingTo: goingTo, group: group, madrich_id: madrich_id, madrich_name: madrich_name, returnDate: returnDate, returnTime: returnTime, students_ids: students_ids, students_names: students_names, confirmationLink: confirmationLink))
                                 } else {
                                     //if the date is equal or later than one week ago
                                     Database.database().reference().child("ExitPermissions").child(String(exitPermissionId)).removeValue()
@@ -208,6 +213,8 @@ struct MadrichMainView: View {
                             }
                         }
                         Database.database().reference().child("Madrichs").child(Auth.auth().currentUser?.uid ?? "").child("exit_permissions").setValue(madrichExitPermissions)
+                        
+                        exitPermissions1.reverse()
                         
                         permissions = exitPermissions1
                     }

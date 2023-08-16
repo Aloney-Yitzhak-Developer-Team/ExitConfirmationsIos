@@ -30,8 +30,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
             landmarkName = "fetchStudents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +46,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "fetchStudents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,8 +62,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "fetchStudents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "fetchStudents()"
             landmarkType = "7">
             <Locations>
@@ -126,8 +126,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "fetchStudents()"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,42 +142,10 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "fetchMadrichInfo()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "17B84927-EA8C-4E99-BF39-8C89765234DD - 18912fa9baddd47c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ExitConfirmations.MadrichMainView.fetchMadrichInfo() -&gt; ()"
-                  moduleName = "ExitConfirmations"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/madrich/MadrichMainView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  uuid = "17B84927-EA8C-4E99-BF39-8C89765234DD - 8513b46e8298bdf4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in ExitConfirmations.MadrichMainView.fetchMadrichInfo() -&gt; ()"
-                  moduleName = "ExitConfirmations"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/madrich/MadrichMainView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -190,8 +158,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
             landmarkName = "fetchMadrichInfo()"
             landmarkType = "7">
          </BreakpointContent>
@@ -206,8 +174,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "fetchMadrichInfo()"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +190,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "content"
             landmarkType = "24">
          </BreakpointContent>
@@ -238,8 +206,8 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -248,22 +216,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "60F9EA74-3AEE-49B9-8DC8-D751934CD4A1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "body"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6E3CCCCB-1823-4AD9-A8EF-2DDEF9E1E6D8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -279,6 +231,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "6E3CCCCB-1823-4AD9-A8EF-2DDEF9E1E6D8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "2151E5D4-EBF0-4310-8AA2-011DCA1A4DF1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -286,10 +254,213 @@
             filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "fetchMadrichInfo()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60F40FF5-2EBF-4D88-B927-63CE67538A93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "CreateExitPermissionBS"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "60F40FF5-2EBF-4D88-B927-63CE67538A93 - f1501232c1fcd93e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of ExitConfirmations.CreateExitPermissionBS.exitDateAndTime : Foundation.Date"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "60F40FF5-2EBF-4D88-B927-63CE67538A93 - a66a44c254b331ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExitConfirmations.CreateExitPermissionBS.exitDateAndTime.getter : Foundation.Date"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "60F40FF5-2EBF-4D88-B927-63CE67538A93 - 4ea6fdf88cbe4598"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExitConfirmations.CreateExitPermissionBS.exitDateAndTime.setter : Foundation.Date"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "60F40FF5-2EBF-4D88-B927-63CE67538A93 - 61492bfb9131feaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExitConfirmations.CreateExitPermissionBS.exitDateAndTime.modify : Foundation.Date"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "308">
+               </Location>
+               <Location
+                  uuid = "60F40FF5-2EBF-4D88-B927-63CE67538A93 - 1388a66cfe4e26f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExitConfirmations.CreateExitPermissionBS.exitDateAndTime.modify : Foundation.Date with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "60F40FF5-2EBF-4D88-B927-63CE67538A93 - 79536c5268deef13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExitConfirmations.CreateExitPermissionBS.$exitDateAndTime.getter : SwiftUI.Binding&lt;Foundation.Date&gt;"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "60F40FF5-2EBF-4D88-B927-63CE67538A93 - 2072d7cc21e946a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExitConfirmations.CreateExitPermissionBS.init() -&gt; ExitConfirmations.CreateExitPermissionBS"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "444">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEC46493-2674-46B1-BD74-1AE3F5747D99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExitConfirmations/bottom_sheets/CreateExitPermissionBS.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
+            landmarkName = "exitPermissionDataView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73F68CEB-9C24-4BF2-A300-23C6A4E2C9AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "content"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A4568AF-530C-4B0B-88AD-9F4D2BB1062E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExitConfirmations/madrich/MadrichMainView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "fetchStudents()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2A4568AF-530C-4B0B-88AD-9F4D2BB1062E - ec5c799a1642c827"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in closure #1 (__C.FIRDataSnapshot) -&gt; () in ExitConfirmations.MadrichMainView.fetchStudents() -&gt; ()"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/madrich/MadrichMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "2812">
+               </Location>
+               <Location
+                  uuid = "2A4568AF-530C-4B0B-88AD-9F4D2BB1062E - ec5c799a1642c827"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRDataSnapshot) -&gt; () in closure #1 (__C.FIRDataSnapshot) -&gt; () in ExitConfirmations.MadrichMainView.fetchStudents() -&gt; ()"
+                  moduleName = "ExitConfirmations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/programmerc11/ExitConfirmationsIos/ExitConfirmations/madrich/MadrichMainView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "2940">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -51,7 +51,7 @@ struct StartView: View {
             Button(action: {
                 isLoginBottomSheetRequested.toggle()
             }){
-                Text(NSLocalizedString("sign_in", comment: ""))
+                Text(NSLocalizedString("login", comment: ""))
                     .padding(.bottom, 15)
                     .padding(.top, 15)
                     .padding(.leading, 50)
@@ -112,7 +112,7 @@ struct LoginBottomSheetView: View {
             
             Spacer()
             
-            Text("Login")
+            Text(NSLocalizedString("login", comment: ""))
                 .foregroundColor(.black)
                 .font(.system(size: 30))
             
@@ -123,7 +123,7 @@ struct LoginBottomSheetView: View {
                 Image("email_icon")
                     .foregroundColor(.gray)
                 
-                TextField("Email", text: $email)
+                TextField(NSLocalizedString("email", comment: ""), text: $email)
                     .padding(.leading, 5)
                     .autocapitalization(.none)
                     .textFieldStyle(.automatic)
@@ -140,7 +140,7 @@ struct LoginBottomSheetView: View {
                 Image("password_icon")
                     .foregroundColor(.gray)
                 
-                SecureField("Password", text: $password)
+                SecureField(NSLocalizedString("password", comment: ""), text: $password)
                     .padding(.leading, 5)
                     .textFieldStyle(.plain)
             }
@@ -154,7 +154,7 @@ struct LoginBottomSheetView: View {
             Button(action:{
                 login()
             }){
-                Text("Login")
+                Text(NSLocalizedString("login", comment: ""))
                     .padding(.bottom, 15)
                     .padding(.top, 15)
                     .padding(.leading, 50)
