@@ -66,7 +66,9 @@ class CreateExitPermissionBS_viewmodel : ObservableObject{
     func getGroups() -> String{
         var groups : Set<String> = []
         for student in students{
-            groups.insert(student.group)
+            if (student.selected){
+                groups.insert(student.group)
+            }
         }
         var groupsStr = ""
         for grp in groups{

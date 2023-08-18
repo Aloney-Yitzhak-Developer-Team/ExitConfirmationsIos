@@ -7,8 +7,8 @@
 "accept" = "לאשר";
 "going_to" = "יציאה ל";
 "exit_time" = "זמן היציאה";
-"exit_date" = "יום היציאה";
-"return_date" = "יום החזרה";
+"exit_date" = "יציאה ב";
+"return_date" = "חזרה ב";
 "return_time" = "זמן החזרה";
 "group" = "קבוצה";
 "students_names" = "שמות החניכים";
@@ -24,3 +24,4 @@
 "login_to_acc" = "להתחבר לחשבון";
 "exit_permission_details" = "פרטי הרשאת יציאה";
 "exit_permission_created" = "פתק יצר";
+"students" = "תלמידים";

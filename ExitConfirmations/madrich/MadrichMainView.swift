@@ -67,28 +67,37 @@ struct MadrichMainView: View {
                 }
                 Divider()
                 
-                List(self.permissions){ conf in
-                    VStack{
-                        HStack{
-                            
-                            if (conf.confirmed){
-                                Image("permission_confirmed_icon")
-                            }
-                            
-                            Spacer()
-                            
+                NavigationStack{
+                    List(self.permissions){ conf in
+                        NavigationLink(destination: PermissionInfoBottomSheet(exitPermission: conf)){
                             VStack{
-                                Text(conf.students_names)
-                                Text(conf.group)
+                                HStack{
+                                    
+                                    if (conf.confirmed){
+                                        Image("permission_confirmed_icon")
+                                    }
+                                    
+                                    Spacer()
+                                    
+                                    
+                                    VStack{
+                                        Text(conf.students_names)
+                                            .foregroundStyle(Color.black)
+                                        Text(conf.group)
+                                            .foregroundStyle(Color.black)
+                                    }
+                                    
+                                    Spacer()
+                                    
+                                    Text("\(conf.exitTime) \(conf.exitDate)")
+                                        .foregroundStyle(Color.black)
+                                    
+                                }
                             }
-                            
-                            Spacer()
-                            
-                            Text("\(conf.exitTime) \(conf.exitDate)")
                         }
+                    }.onAppear{
+                        fetchStudents()
                     }
-                }.onAppear{
-                    fetchStudents()
                 }
                 
                 

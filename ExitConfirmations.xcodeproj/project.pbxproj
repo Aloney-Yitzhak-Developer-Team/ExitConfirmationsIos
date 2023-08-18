@@ -30,6 +30,7 @@
 		7658141F2A87A4CB001D1222 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7658141E2A87A4CB001D1222 /* Localizable.strings */; };
 		766601032A87B6B3006DC42E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766601022A87B6B3006DC42E /* Student.swift */; };
 		766601062A8A3B5F006DC42E /* CreateExitPermissionBSVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766601052A8A3B5F006DC42E /* CreateExitPermissionBSVIewModel.swift */; };
+		7666010A2A8E3924006DC42E /* PermissionInfoBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766601092A8E3924006DC42E /* PermissionInfoBottomSheet.swift */; };
 		76E57E772A1CBFB800581DB4 /* ExitPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E57E762A1CBFB800581DB4 /* ExitPermission.swift */; };
 		76E57E792A1D100E00581DB4 /* MadrichMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E57E782A1D100E00581DB4 /* MadrichMainView.swift */; };
 		76E796222A7EB8CE0084A78A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */; };
@@ -72,6 +73,7 @@
 		7658141E2A87A4CB001D1222 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		766601022A87B6B3006DC42E /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		766601052A8A3B5F006DC42E /* CreateExitPermissionBSVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExitPermissionBSVIewModel.swift; sourceTree = "<group>"; };
+		766601092A8E3924006DC42E /* PermissionInfoBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionInfoBottomSheet.swift; sourceTree = "<group>"; };
 		76E57E762A1CBFB800581DB4 /* ExitPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitPermission.swift; sourceTree = "<group>"; };
 		76E57E782A1D100E00581DB4 /* MadrichMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadrichMainView.swift; sourceTree = "<group>"; };
 		76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				76063AB62A85847A005299D7 /* CreateExitPermissionBS.swift */,
+				766601092A8E3924006DC42E /* PermissionInfoBottomSheet.swift */,
 			);
 			path = bottom_sheets;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				763C43952A1FC19A00D228B1 /* StudentsView.swift in Sources */,
 				766601032A87B6B3006DC42E /* Student.swift in Sources */,
 				7607A2372A1C9000002E3B5D /* StudentMainVIew.swift in Sources */,
+				7666010A2A8E3924006DC42E /* PermissionInfoBottomSheet.swift in Sources */,
 				76E57E772A1CBFB800581DB4 /* ExitPermission.swift in Sources */,
 				763C43972A1FCE1400D228B1 /* GivenPermissionsView.swift in Sources */,
 				76E57E792A1D100E00581DB4 /* MadrichMainView.swift in Sources */,

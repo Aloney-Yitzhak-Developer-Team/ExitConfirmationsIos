@@ -294,7 +294,7 @@ struct CreateExitPermissionBS: View {
                         dateFormatter.dateFormat = "dd.MM.yyyy"
                         
                         let timeFormatter = DateFormatter()
-                        timeFormatter.dateFormat = "HH.mm"
+                        timeFormatter.dateFormat = "HH:mm"
                         
                         var exitPermissionInfo = [String : Any]()
                         exitPermissionInfo["id"] = String(Int(Date().timeIntervalSince1970 * 1000)) //current time in millis
