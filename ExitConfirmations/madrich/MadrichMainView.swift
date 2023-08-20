@@ -47,15 +47,16 @@ struct MadrichMainView: View {
                     
                     Spacer()
                     
-                    Button("logout", action: {
+                    Button(action: {
                         do{
                             isUserSignedIn = false
                             try Auth.auth().signOut()
                         }catch let error{
                             print(error.localizedDescription)
                         }
-                        
-                    })
+                    }){
+                        Image(systemName: "rectangle.portrait.and.arrow.forward")
+                    }
                     
                     Spacer()
                     

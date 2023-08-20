@@ -25,12 +25,12 @@
 		7607A2332A1C8A73002E3B5D /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7607A2322A1C8A73002E3B5D /* FirebaseFirestoreCombine-Community */; };
 		7607A2352A1C8A73002E3B5D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7607A2342A1C8A73002E3B5D /* FirebaseFirestoreSwift */; };
 		7607A2372A1C9000002E3B5D /* StudentMainVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607A2362A1C9000002E3B5D /* StudentMainVIew.swift */; };
-		763C43952A1FC19A00D228B1 /* StudentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C43942A1FC19900D228B1 /* StudentsView.swift */; };
-		763C43972A1FCE1400D228B1 /* GivenPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763C43962A1FCE1400D228B1 /* GivenPermissionsView.swift */; };
 		7658141F2A87A4CB001D1222 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7658141E2A87A4CB001D1222 /* Localizable.strings */; };
 		766601032A87B6B3006DC42E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766601022A87B6B3006DC42E /* Student.swift */; };
 		766601062A8A3B5F006DC42E /* CreateExitPermissionBSVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766601052A8A3B5F006DC42E /* CreateExitPermissionBSVIewModel.swift */; };
 		7666010A2A8E3924006DC42E /* PermissionInfoBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766601092A8E3924006DC42E /* PermissionInfoBottomSheet.swift */; };
+		7666010C2A901CB3006DC42E /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666010B2A901CB3006DC42E /* ScannerViewController.swift */; };
+		7666010F2A901E74006DC42E /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 7666010E2A901E74006DC42E /* CodeScanner */; };
 		76E57E772A1CBFB800581DB4 /* ExitPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E57E762A1CBFB800581DB4 /* ExitPermission.swift */; };
 		76E57E792A1D100E00581DB4 /* MadrichMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E57E782A1D100E00581DB4 /* MadrichMainView.swift */; };
 		76E796222A7EB8CE0084A78A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */; };
@@ -68,12 +68,11 @@
 		7607A2102A1C8917002E3B5D /* ExitConfirmationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitConfirmationsUITests.swift; sourceTree = "<group>"; };
 		7607A2122A1C8917002E3B5D /* ExitConfirmationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitConfirmationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7607A2362A1C9000002E3B5D /* StudentMainVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMainVIew.swift; sourceTree = "<group>"; };
-		763C43942A1FC19900D228B1 /* StudentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsView.swift; sourceTree = "<group>"; };
-		763C43962A1FCE1400D228B1 /* GivenPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenPermissionsView.swift; sourceTree = "<group>"; };
 		7658141E2A87A4CB001D1222 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		766601022A87B6B3006DC42E /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		766601052A8A3B5F006DC42E /* CreateExitPermissionBSVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExitPermissionBSVIewModel.swift; sourceTree = "<group>"; };
 		766601092A8E3924006DC42E /* PermissionInfoBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionInfoBottomSheet.swift; sourceTree = "<group>"; };
+		7666010B2A901CB3006DC42E /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		76E57E762A1CBFB800581DB4 /* ExitPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitPermission.swift; sourceTree = "<group>"; };
 		76E57E782A1D100E00581DB4 /* MadrichMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadrichMainView.swift; sourceTree = "<group>"; };
 		76E796212A7EB8CE0084A78A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 				7607A22D2A1C8A73002E3B5D /* FirebaseDatabaseSwift in Frameworks */,
 				7607A2332A1C8A73002E3B5D /* FirebaseFirestoreCombine-Community in Frameworks */,
 				7607A2272A1C8A73002E3B5D /* FirebaseAnalyticsSwift in Frameworks */,
+				7666010F2A901E74006DC42E /* CodeScanner in Frameworks */,
 				7607A2292A1C8A73002E3B5D /* FirebaseAuth in Frameworks */,
 				7607A22B2A1C8A73002E3B5D /* FirebaseDatabase in Frameworks */,
 				7607A2252A1C8A73002E3B5D /* FirebaseAnalytics in Frameworks */,
@@ -160,6 +160,7 @@
 				7607A1F72A1C8916002E3B5D /* StartView.swift */,
 				7607A1F92A1C8917002E3B5D /* Assets.xcassets */,
 				7607A1FB2A1C8917002E3B5D /* Preview Content */,
+				7666010B2A901CB3006DC42E /* ScannerViewController.swift */,
 			);
 			path = ExitConfirmations;
 			sourceTree = "<group>";
@@ -193,8 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				76E57E782A1D100E00581DB4 /* MadrichMainView.swift */,
-				763C43942A1FC19900D228B1 /* StudentsView.swift */,
-				763C43962A1FCE1400D228B1 /* GivenPermissionsView.swift */,
 			);
 			path = madrich;
 			sourceTree = "<group>";
@@ -266,6 +265,7 @@
 				7607A2322A1C8A73002E3B5D /* FirebaseFirestoreCombine-Community */,
 				7607A2342A1C8A73002E3B5D /* FirebaseFirestoreSwift */,
 				76E796292A8297290084A78A /* Toast */,
+				7666010E2A901E74006DC42E /* CodeScanner */,
 			);
 			productName = ExitConfirmations;
 			productReference = 7607A1F22A1C8916002E3B5D /* ExitConfirmations.app */;
@@ -343,6 +343,7 @@
 			packageReferences = (
 				7607A2232A1C8A73002E3B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				76E796282A8297290084A78A /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				7666010D2A901E74006DC42E /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 7607A1F32A1C8916002E3B5D /* Products */;
 			projectDirPath = "";
@@ -390,14 +391,13 @@
 			files = (
 				76E796252A7F79B80084A78A /* GuardMainView.swift in Sources */,
 				7607A1F82A1C8916002E3B5D /* StartView.swift in Sources */,
-				763C43952A1FC19A00D228B1 /* StudentsView.swift in Sources */,
 				766601032A87B6B3006DC42E /* Student.swift in Sources */,
 				7607A2372A1C9000002E3B5D /* StudentMainVIew.swift in Sources */,
 				7666010A2A8E3924006DC42E /* PermissionInfoBottomSheet.swift in Sources */,
 				76E57E772A1CBFB800581DB4 /* ExitPermission.swift in Sources */,
-				763C43972A1FCE1400D228B1 /* GivenPermissionsView.swift in Sources */,
 				76E57E792A1D100E00581DB4 /* MadrichMainView.swift in Sources */,
 				766601062A8A3B5F006DC42E /* CreateExitPermissionBSVIewModel.swift in Sources */,
+				7666010C2A901CB3006DC42E /* ScannerViewController.swift in Sources */,
 				76063AB72A85847A005299D7 /* CreateExitPermissionBS.swift in Sources */,
 				7607A1F62A1C8916002E3B5D /* ExitConfirmationsApp.swift in Sources */,
 			);
@@ -563,11 +563,13 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan qr code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,11 +594,13 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan qr code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -732,6 +736,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		7666010D2A901E74006DC42E /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		76E796282A8297290084A78A /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift";
@@ -787,6 +799,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7607A2232A1C8A73002E3B5D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		7666010E2A901E74006DC42E /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7666010D2A901E74006DC42E /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 		76E796292A8297290084A78A /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;
