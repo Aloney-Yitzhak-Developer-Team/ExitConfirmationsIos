@@ -70,18 +70,18 @@ struct StartView: View {
         .onAppear{
             Auth.auth().addStateDidChangeListener{ auth, user in
                 if user != nil{
-                    Database.database().reference().child("Madrichs").observeSingleEvent(of: DataEventType.value, with: { snapshot in
-                        if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
-                            accountType = 1
+                    Database.database().reference().child("Students").observeSingleEvent(of: DataEventType.value, with: { snapshot1 in
+                        if (snapshot1.hasChild(user?.uid ?? "")){
+                            accountType = 2
                             loggedIn.toggle()
                         }else{
-                            Database.database().reference().child("Students").observeSingleEvent(of: DataEventType.value, with: { snapshot in
-                                if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
-                                    accountType = 2
+                            Database.database().reference().child("Madrichs").observeSingleEvent(of: DataEventType.value, with: { snapshot in
+                                if (snapshot.hasChild(user?.uid ?? "")){
+                                    accountType = 1
                                     loggedIn.toggle()
                                 }else{
-                                    Database.database().reference().child("Guards").observeSingleEvent(of: DataEventType.value, with: { snapshot in
-                                        if (snapshot.hasChild(Auth.auth().currentUser?.uid ?? "")){
+                                    Database.database().reference().child("Guards").observeSingleEvent(of: DataEventType.value, with: { snapshot2 in
+                                        if (snapshot2.hasChild(user?.uid ?? "")){
                                             accountType = 3
                                             loggedIn.toggle()
                                         }
@@ -90,6 +90,7 @@ struct StartView: View {
                             })
                         }
                     })
+                    
                 }
             }
         }

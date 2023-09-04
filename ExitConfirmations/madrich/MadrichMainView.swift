@@ -97,7 +97,7 @@ struct MadrichMainView: View {
                             }
                         }
                     }.onAppear{
-                        fetchStudents()
+                        fetchExitPermissions()
                     }
                 }
                 
@@ -127,7 +127,7 @@ struct MadrichMainView: View {
             }
         }.refreshable {
             fetchMadrichInfo()
-            fetchStudents()
+            fetchExitPermissions()
         }
     }
     
@@ -145,7 +145,8 @@ struct MadrichMainView: View {
         })
     }
     
-    func fetchStudents() {
+    func fetchExitPermissions() {
+        permissions.removeAll()
         if Auth.auth().currentUser?.uid==nil{
             isUserSignedIn = false
         }
