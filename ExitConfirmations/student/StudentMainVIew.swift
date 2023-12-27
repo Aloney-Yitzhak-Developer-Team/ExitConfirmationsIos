@@ -9,8 +9,6 @@ import SwiftUI
 import Firebase
 import FirebaseCore
 import FirebaseAuth
-import FirebaseFirestore
-import FirebaseFirestoreSwift
 
 struct StudentMainView: View {
     
@@ -137,19 +135,19 @@ struct StudentMainView: View {
                                 let students_names = String(data["students_names"] as? String ?? "false")
                                 let confirmationLink = String(data["confirmationLink"] as? String ?? "false")
                                 
-                                //if the date is earlier than one week age
+                                //if the date is earlier than one week age and it was not deleted
                                 exitPermissions1.append(ExitPermission(id: String(exitPermissionId), confirmed: confirmed, exitDate:exitDate, exitTime: exitTime, goingTo: goingTo, group: group, madrich_id: madrich_id, madrich_name: madrich_name, returnDate: returnDate, returnTime: returnTime, students_ids: students_ids, students_names: students_names, confirmationLink: confirmationLink))
                             }
                         }
-                        var madrichExitPermissions = ""
+                        var studentExitPermissions = ""
                         for exitPermissionId in exitPermissions2 {
-                            if madrichExitPermissions.isEmpty{
-                                madrichExitPermissions = String(exitPermissionId)
+                            if studentExitPermissions.isEmpty{
+                                studentExitPermissions = String(exitPermissionId)
                             }else{
-                                madrichExitPermissions += ",\(exitPermissionId)"
+                                studentExitPermissions += ",\(exitPermissionId)"
                             }
                         }
-                        Database.database().reference().child("Madrichs").child(Auth.auth().currentUser?.uid ?? "").child("exit_permissions").setValue(madrichExitPermissions)
+                        Database.database().reference().child("Students").child(Auth.auth().currentUser?.uid ?? "").child("exit_permissions").setValue(studentExitPermissions)
                         
                         exitPermissions1.reverse()
                         
