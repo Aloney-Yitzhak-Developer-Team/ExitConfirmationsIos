@@ -11,7 +11,6 @@ import FirebaseDatabase
 import FirebaseDatabaseSwift
 
 struct ExitPermissionRepository{
-    let databaseRef = Database.database().reference()
     func loadExitPermission(id: String, completion: @escaping (ExitPermission?) -> Void) {
         let exitPermissionRef = databaseRef.child(NODE_EP).child(id)
         
@@ -85,7 +84,7 @@ struct ExitPermissionRepository{
                 if let exitPermission = exitPermission {
                     exitPermissions.append(exitPermission)
                 } else {
-                    currentExitPermissionsStr = currentExitPermissionsStr.removeEPId(String(id))
+                    currentExitPermissionsStr = currentExitPermissionsStr.removeEPId(id: String(id))
                 }
                 
                 if exitPermissions.count == exitPermissionsIds.count {
@@ -96,12 +95,14 @@ struct ExitPermissionRepository{
     }
     
     func addExitPermission(exitPermission: ExitPermission, onSuccess: @escaping (String) -> Void) {
-        let key = databaseRef.child("ExitPermissions").childByAutoId().key
-        exitPermission.confirmation = key
-        exitPermission.id = key ?? ""
+        let key = databaseRef.child(NODE_EP).childByAutoId().key
+        
+        var curExitPermission = exitPermission
+        curExitPermission.confirmation = key
+        curExitPermission.id = key ?? ""
         
         if let key = key {
-            databaseRef.child("ExitPermissions").child(key).setValue(exitPermission.getAsDictionary()) { (error, _) in
+            databaseRef.child(NODE_EP).child(key).setValue(exitPermission.getAsDictionary()) { (error, _) in
                 if error == nil {
                     onSuccess(key)
                 }

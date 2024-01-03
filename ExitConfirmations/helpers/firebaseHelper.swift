@@ -1,4 +1,8 @@
 import Foundation
+import FirebaseDatabase
+import FirebaseDatabase
+
+let databaseRef = Database.database().reference()
 
 // Constants for Firebase Realtime Database nodes
 let NODE_GROUPS = "Groups"
