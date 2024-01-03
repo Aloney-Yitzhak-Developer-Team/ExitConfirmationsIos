@@ -11,5 +11,5 @@ struct Student : Identifiable, Codable{
     let id: String
     let name: String
     let group: String
-    var selected = false
+    let profileImageUrl: String
 }

@@ -22,6 +22,13 @@
 		7607A22D2A1C8A73002E3B5D /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7607A22C2A1C8A73002E3B5D /* FirebaseDatabaseSwift */; };
 		7607A22F2A1C8A73002E3B5D /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 7607A22E2A1C8A73002E3B5D /* FirebaseDynamicLinks */; };
 		7607A2372A1C9000002E3B5D /* StudentMainVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7607A2362A1C9000002E3B5D /* StudentMainVIew.swift */; };
+		762BB4B92B4546C8000230AB /* firebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BB4B82B4546C8000230AB /* firebaseHelper.swift */; };
+		762BB4BB2B45544E000230AB /* ExitStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BB4BA2B45544E000230AB /* ExitStatus.swift */; };
+		762BB4BE2B45553B000230AB /* dateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BB4BD2B45553B000230AB /* dateHelper.swift */; };
+		762BB4C02B45556C000230AB /* Madrich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BB4BF2B45556C000230AB /* Madrich.swift */; };
+		762BB4C42B4555D0000230AB /* ExitPermissionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BB4C32B4555D0000230AB /* ExitPermissionRepository.swift */; };
+		762BB4C62B455693000230AB /* exitPermissionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BB4C52B455693000230AB /* exitPermissionHelper.swift */; };
+		762BB4C82B455737000230AB /* firebaseStirngIdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BB4C72B455737000230AB /* firebaseStirngIdManager.swift */; };
 		7658141F2A87A4CB001D1222 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7658141E2A87A4CB001D1222 /* Localizable.strings */; };
 		766372322B3CA65F00B50C24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 766372312B3CA65F00B50C24 /* GoogleService-Info.plist */; };
 		766601032A87B6B3006DC42E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766601022A87B6B3006DC42E /* Student.swift */; };
@@ -65,6 +72,13 @@
 		7607A2102A1C8917002E3B5D /* ExitConfirmationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitConfirmationsUITests.swift; sourceTree = "<group>"; };
 		7607A2122A1C8917002E3B5D /* ExitConfirmationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitConfirmationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7607A2362A1C9000002E3B5D /* StudentMainVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMainVIew.swift; sourceTree = "<group>"; };
+		762BB4B82B4546C8000230AB /* firebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseHelper.swift; sourceTree = "<group>"; };
+		762BB4BA2B45544E000230AB /* ExitStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitStatus.swift; sourceTree = "<group>"; };
+		762BB4BD2B45553B000230AB /* dateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateHelper.swift; sourceTree = "<group>"; };
+		762BB4BF2B45556C000230AB /* Madrich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Madrich.swift; sourceTree = "<group>"; };
+		762BB4C32B4555D0000230AB /* ExitPermissionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitPermissionRepository.swift; sourceTree = "<group>"; };
+		762BB4C52B455693000230AB /* exitPermissionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exitPermissionHelper.swift; sourceTree = "<group>"; };
+		762BB4C72B455737000230AB /* firebaseStirngIdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseStirngIdManager.swift; sourceTree = "<group>"; };
 		7658141E2A87A4CB001D1222 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		766372312B3CA65F00B50C24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		766601022A87B6B3006DC42E /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -143,11 +157,12 @@
 		7607A1F42A1C8916002E3B5D /* ExitConfirmations */ = {
 			isa = PBXGroup;
 			children = (
+				762BB4C12B4555A6000230AB /* data */,
+				762BB4BC2B45552B000230AB /* helpers */,
 				766372312B3CA65F00B50C24 /* GoogleService-Info.plist */,
 				766601042A8A3B3F006DC42E /* viewmodels */,
 				76063AB52A8583E4005299D7 /* bottom_sheets */,
 				76E796232A7F79A70084A78A /* guard */,
-				763C439A2A1FD27C00D228B1 /* models */,
 				763C43932A1FC15400D228B1 /* student */,
 				763C43922A1FC14700D228B1 /* madrich */,
 				7607A1F52A1C8916002E3B5D /* ExitConfirmationsApp.swift */,
@@ -155,6 +170,7 @@
 				7607A1F92A1C8917002E3B5D /* Assets.xcassets */,
 				7607A1FB2A1C8917002E3B5D /* Preview Content */,
 				7666010B2A901CB3006DC42E /* ScannerViewController.swift */,
+				762BB4B82B4546C8000230AB /* firebaseHelper.swift */,
 			);
 			path = ExitConfirmations;
 			sourceTree = "<group>";
@@ -184,6 +200,33 @@
 			path = ExitConfirmationsUITests;
 			sourceTree = "<group>";
 		};
+		762BB4BC2B45552B000230AB /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				762BB4BD2B45553B000230AB /* dateHelper.swift */,
+				762BB4C52B455693000230AB /* exitPermissionHelper.swift */,
+				762BB4C72B455737000230AB /* firebaseStirngIdManager.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		762BB4C12B4555A6000230AB /* data */ = {
+			isa = PBXGroup;
+			children = (
+				762BB4C22B4555BD000230AB /* repository */,
+				763C439A2A1FD27C00D228B1 /* models */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		762BB4C22B4555BD000230AB /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				762BB4C32B4555D0000230AB /* ExitPermissionRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
 		763C43922A1FC14700D228B1 /* madrich */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +248,8 @@
 			children = (
 				76E57E762A1CBFB800581DB4 /* ExitPermission.swift */,
 				766601022A87B6B3006DC42E /* Student.swift */,
+				762BB4BA2B45544E000230AB /* ExitStatus.swift */,
+				762BB4BF2B45556C000230AB /* Madrich.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -380,15 +425,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762BB4C82B455737000230AB /* firebaseStirngIdManager.swift in Sources */,
+				762BB4B92B4546C8000230AB /* firebaseHelper.swift in Sources */,
 				76E796252A7F79B80084A78A /* GuardMainView.swift in Sources */,
+				762BB4C62B455693000230AB /* exitPermissionHelper.swift in Sources */,
 				7607A1F82A1C8916002E3B5D /* StartView.swift in Sources */,
 				766601032A87B6B3006DC42E /* Student.swift in Sources */,
 				7607A2372A1C9000002E3B5D /* StudentMainVIew.swift in Sources */,
+				762BB4BB2B45544E000230AB /* ExitStatus.swift in Sources */,
+				762BB4C02B45556C000230AB /* Madrich.swift in Sources */,
 				7666010A2A8E3924006DC42E /* PermissionInfoBottomSheet.swift in Sources */,
 				76E57E772A1CBFB800581DB4 /* ExitPermission.swift in Sources */,
 				76E57E792A1D100E00581DB4 /* MadrichMainView.swift in Sources */,
 				766601062A8A3B5F006DC42E /* CreateExitPermissionBSVIewModel.swift in Sources */,
 				7666010C2A901CB3006DC42E /* ScannerViewController.swift in Sources */,
+				762BB4C42B4555D0000230AB /* ExitPermissionRepository.swift in Sources */,
+				762BB4BE2B45553B000230AB /* dateHelper.swift in Sources */,
 				76063AB72A85847A005299D7 /* CreateExitPermissionBS.swift in Sources */,
 				7607A1F62A1C8916002E3B5D /* ExitConfirmationsApp.swift in Sources */,
 			);

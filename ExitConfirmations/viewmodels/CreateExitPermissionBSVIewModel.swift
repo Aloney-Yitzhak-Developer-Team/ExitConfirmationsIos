@@ -37,14 +37,12 @@ class CreateExitPermissionBS_viewmodel : ObservableObject{
     func loadStudentsFromOneGroup(){
         students.removeAll()
         Database.database().reference().observeSingleEvent(of: DataEventType.value, with: {snapshot in
-            if let group = snapshot.childSnapshot(forPath: "Madrichs").childSnapshot(forPath: Auth.auth().currentUser!.uid).childSnapshot(forPath: "group").value as? String{
+            if let group = snapshot.childSnapshot(forPath: NODE_MADRICHS).childSnapshot(forPath: Auth.auth().currentUser!.uid).childSnapshot(forPath: CHILD_GROUP).value as? String{
                 
-                print (group)
-                
-                if let groupStudentsStr = snapshot.childSnapshot(forPath: "Groups/\(group)").value as? String{
+                if let groupStudentsStr = snapshot.childSnapshot(forPath: "\(NODE_GROUPS)/\(group)/\(CHILD_STUDENTS)").value as? String{
                     let groupStudents = groupStudentsStr.split(separator: ",")
                     for studentId in groupStudents{
-                        if let student_name = snapshot.childSnapshot(forPath: "Students/\(studentId)/name").value as? String{
+                        if let student_name = snapshot.childSnapshot(forPath: "\(NODE_STUDENTS)/\(studentId)/\(CHILD_NAME)").value as? String{
                             self.students.append(Student(id: String(studentId), name: student_name, group: group))
                         }
                     }
@@ -83,7 +81,7 @@ class CreateExitPermissionBS_viewmodel : ObservableObject{
     }
     
     public func getMadrichName(){
-        Database.database().reference().child("Madrichs").child(Auth.auth().currentUser?.uid ?? "").child("name").observeSingleEvent(of: DataEventType.value, with: {snapshot in
+        Database.database().reference().child(NODE_MADRICHS).child(Auth.auth().currentUser?.uid ?? "").child(CHILD_NAME).observeSingleEvent(of: DataEventType.value, with: {snapshot in
             if let name = snapshot.value as? String{
                 self.madrichName = name
             }

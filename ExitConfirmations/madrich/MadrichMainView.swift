@@ -148,9 +148,9 @@ struct MadrichMainView: View {
         if Auth.auth().currentUser?.uid==nil{
             isUserSignedIn = false
         }
-        Database.database().reference().child("Madrichs").child(Auth.auth().currentUser?.uid ?? "").child("exit_permissions").observeSingleEvent(of: DataEventType.value, with: { snapshot1  in
+        Database.database().reference().child(NODE_MADRICHS).child(Auth.auth().currentUser?.uid ?? "").child(CHILD_EXIT_PERMISSIONS).observeSingleEvent(of: DataEventType.value, with: { snapshot1  in
             Database.database().reference().observeSingleEvent(of: DataEventType.value, with: { snapshot in
-                guard snapshot.hasChild("ExitPermissions") else {
+                guard snapshot.hasChild(NODE_EP) else {
                     return
                 }
                 
@@ -163,22 +163,22 @@ struct MadrichMainView: View {
                         var exitPermissions2 : Array<Substring> = exit_permissions.split(separator: ",")
                         
                         for exitPermissionId in exitPermissions2{
-                            if (!snapshot.childSnapshot(forPath: "ExitPermissions").childSnapshot(forPath: String(exitPermissionId)).exists()){
+                            if (!snapshot.childSnapshot(forPath: NODE_EP).childSnapshot(forPath: String(exitPermissionId)).exists()){
                                 if let index = exitPermissions2.firstIndex(of: exitPermissionId){
                                     exitPermissions2.remove(at: index)
                                 }
                                 continue
                             }
                             
-                            if let data = snapshot.childSnapshot(forPath:"ExitPermissions").childSnapshot(forPath: String(exitPermissionId)).value as? [String: Any]{
+                            if let data = snapshot.childSnapshot(forPath:NODE_EP).childSnapshot(forPath: String(exitPermissionId)).value as? [String: Any]{
                                 
-                                let confirmed = data["confirmed"] as? Bool ?? false
-                                let exitDate = String(data["exitDate"] as? String ?? "false")
-                                let exitTime = String(data["exitTime"] as? String ?? "false")
-                                let goingTo = String(data["goingTo"] as? String ?? "false")
-                                let group = String(data["group"] as? String ?? "false")
-                                let madrich_id = String(data["madrich_id"] as? String ?? "false")
-                                let madrich_name = String(data["madrich_name"] as? String ?? "false")
+                                let confirmed = data[CHILD_STATUS] as? Bool ?? false
+                                let exitDate = String(data[CHILD_EXIT_DATE] as? String ?? "false")
+                                let exitTime = String(data[CHILD_EXIT_TIME] as? String ?? "false")
+                                let goingTo = String(data[CHILD_DESTINATION] as? String ?? "false")
+                                let group = String(data[CHILD_GROUP] as? String ?? "false")
+                                let madrich_id = String(data[CHILD_MADRICH_ID] as? String ?? "false")
+                                let madrich_name = String(data[CHILD_MADRICH_NAME] as? String ?? "false")
                                 let returnDate = String(data["returnDate"] as? String ?? "false")
                                 let returnTime = String(data["returnTime"] as? String ?? "false")
                                 let students_ids = String(data["students_ids"] as? String ?? "false")
